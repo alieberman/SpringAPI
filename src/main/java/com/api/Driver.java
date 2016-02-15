@@ -17,7 +17,7 @@ public class Driver {
     String driver;
     @RequestMapping("/api/Driver")
     public String setDriver() {
-        driver = "Aaron";
+        driver = "Aaronius";
         return "The driver is " + driver;
     }
     public String getDriver() {
