@@ -5,22 +5,18 @@
  */
 package com.api;
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 /**
  *
  * @author aaronlieberman
  */
-@RestController
 public class Driver {
-    String driver;
-    @RequestMapping("/api/Driver")
-    public String setDriver() {
-        driver = "Aaronius";
-        return "The driver is " + driver;
+    private final String name;
+
+    public Driver(String name) {
+        this.name = name;
     }
-    public String getDriver() {
-        return driver;
+
+    public String getName() {
+        return name;
     }
 }
