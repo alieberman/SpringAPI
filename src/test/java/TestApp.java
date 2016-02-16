@@ -23,7 +23,7 @@ public class TestApp {
     private static Driver driver;
     @BeforeClass
     public static void initDriver() {
-        driver = new Driver("Aaron");
+        driver = new Driver("Aaronius");
     }
     
     @Test
