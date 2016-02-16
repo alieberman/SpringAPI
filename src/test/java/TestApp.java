@@ -23,13 +23,13 @@ public class TestApp {
     private static Driver driver;
     @BeforeClass
     public static void initDriver() {
-        driver = new Driver("Aaron");
+        driver = new Driver("Aarons");
     }
     
     @Test
     public void testDriver() {
         //String driverRes = driver.sum(3, 4);
         String myDriver = driver.getName();
-        assertEquals(myDriver, "Aaron");
+        assertEquals(myDriver, "Aarons");
     }
 }
