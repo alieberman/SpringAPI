@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DriverController {
     private static final String template = "%s";
-    private final int counter = 1;
+    public final int counter = 1;
     
     @RequestMapping("/driver")
     public Driver driver(String name) {
